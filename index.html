@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDS</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="cruds">
+        <div class="head">
+            <h2>CRUDS</h2>
+            <P>PORDECT MANAGEMENT SYSTEM</P>
+        </div>
+        <div class="create">
+            <input id ="title" type="text" placeholder="Title">
+            <div class="totle">
+                <input onkeyup="totlepro()" id ="price" type="number" placeholder="price">
+                <input onkeyup="totlepro()" id ="taxes" type="number" placeholder="taxes">
+                <input onkeyup="totlepro()" id ="ads" type="number" placeholder="ads">
+                <input onkeyup="totlepro()" id ="discount" type="number"placeholder="discount">
+                <small id="totle"></small>
+            </div>
+            <input id ="count" type="number" placeholder="count">
+            <input id ="category" type="text" placeholder="category">
+            <button id="submit">create</button>
+        </div>
+        <div id="deletAll"></div>
+        <div class="view" id="view">
+            <div class="search">
+                <input id="search" type="text" placeholder="Search" onkeyup="searchTitle(this.value)">
+            </div>
+            <button class="print" onclick="printDiv()">Prit <i class="fa-solid fa-print"></i></button>
+
+            <table >
+                <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>price</th>
+                    <th>taxes</th>
+                    <th>ads</th>
+                    <th>discount</th>
+                    <th>totle</th>
+                    <th>gategory</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </tr>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/all.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
